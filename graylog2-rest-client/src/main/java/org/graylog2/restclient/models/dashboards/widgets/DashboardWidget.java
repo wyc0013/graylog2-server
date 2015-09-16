@@ -16,6 +16,7 @@
  */
 package org.graylog2.restclient.models.dashboards.widgets;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.graylog2.rest.models.dashboards.requests.AddWidgetRequest;
 import org.graylog2.restclient.lib.APIException;
 import org.graylog2.restclient.lib.ApiClient;
@@ -46,6 +47,7 @@ public abstract class DashboardWidget {
     private final Type type;
     private final String id;
     private final String description;
+    @JsonIgnore
     private final Dashboard dashboard;
     private final int cacheTime;
     private final String creatorUserId;
