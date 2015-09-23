@@ -55,8 +55,8 @@ public abstract class DashboardWidget {
     private final String query;
     private final TimeRange timerange;
 
-    private int col = 1;
-    private int row = 1;
+    private int col = 0;
+    private int row = 0;
 
     private int height = 0;
     private int width = 0;
